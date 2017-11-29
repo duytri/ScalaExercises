@@ -21,7 +21,8 @@ object bai8 {
       if (!output.contains(x))
         output += (x -> 1)
       else
-        output.update(x, output.get(x).get + 1)
+        output(x) = output(x) + 1
+      //output.update(x, output.get(x).get + 1)
     })
     return output.filter(x => (x._2 == output.values.max))
   }
