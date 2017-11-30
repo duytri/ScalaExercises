@@ -46,6 +46,8 @@ object bai12 {
       }
       iDau += 1; iCuoi -= 1; jDau += 1; jCuoi -= 1
     }
+    if((n%2==1) && (m%2==1))
+    	array((n-1)/2)((m-1)/2) = n*m
     return array
   }
 }
