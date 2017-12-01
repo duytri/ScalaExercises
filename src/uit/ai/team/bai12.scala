@@ -44,10 +44,14 @@ object bai12 {
         array(i)(jDau) = count
         count += 1
       }
+      //Fix error: all n and m are even
+      if ((iCuoi == iDau) && (jCuoi == jDau)) {
+        array(iDau)(jDau) = n * m
+      }
       iDau += 1; iCuoi -= 1; jDau += 1; jCuoi -= 1
     }
-    if((n%2==1) && (m%2==1))
-    	array((n-1)/2)((m-1)/2) = n*m
+    /*if ((n % 2 == 1) && (m % 2 == 1))
+      array((n - 1) / 2)((m - 1) / 2) = n * m*/
     return array
   }
 }

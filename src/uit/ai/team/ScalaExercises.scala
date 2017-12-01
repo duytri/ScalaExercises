@@ -19,7 +19,7 @@ object ScalaExercises {
         case 9 => bai9.run()
         case 10 => bai10.run()
         case 11 => bai11.run()
-        case 12 => bai12.run()
+        case 12 => bai12a.run()
       }
     } while (i < 0 || i > 12)
   }
